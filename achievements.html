@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achievements</title>
 
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#FFE4EC;
+}
+
+nav{
+    background:#FFF0F5;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    margin:20px;
+    text-decoration:none;
+    color:#C2185B;
+    font-weight:bold;
+}
+
+h1{
+    text-align:center;
+    color:#C2185B;
+    margin:40px 0;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding-bottom:50px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    color:#C2185B;
+    padding:15px;
+}
+
+.card p{
+    color:#555;
+    padding:0 15px 20px;
+    line-height:1.6;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="activities.html">Activities</a>
+<a href="achievements.html">Achievements</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>My Achievements</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="images/certificate1.jpg" alt="Certificate 1">
+<h2>เกียรติบัตรที่ 1</h2>
+<p>
+ผ่านการอบรมหรือกิจกรรมด้านวิชาการ พร้อมได้รับเกียรติบัตรรับรองการเข้าร่วม
+</p>
+</div>
+
+<div class="card">
+<img src="images/certificate2.jpg" alt="Certificate 2">
+<h2>เกียรติบัตรที่ 2</h2>
+<p>
+เข้าร่วมการแข่งขันหรือโครงการที่ช่วยพัฒนาทักษะและประสบการณ์
+</p>
+</div>
+
+<div class="card">
+<img src="images/certificate3.jpg" alt="Certificate 3">
+<h2>ผลงานเด่น</h2>
+<p>
+ผลงานที่ภาคภูมิใจ ซึ่งแสดงถึงความสามารถ ความรับผิดชอบ และความมุ่งมั่น
+</p>
+</div>
+
+<div class="card">
+<img src="images/certificate4.jpg" alt="Certificate 4">
+<h2>รางวัล</h2>
+<p>
+รางวัลหรือประกาศนียบัตรที่ได้รับจากการเข้าร่วมกิจกรรมต่าง ๆ
+</p>
+</div>
+
+</div>
+
+</body>
+</html>
