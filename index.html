@@ -46,3 +46,82 @@
 
 </body>
 </html>        
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6e8,#ffeaf4,#fff7fb);
+    min-height:100vh;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(255,255,255,.6);
+    backdrop-filter:blur(10px);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#ec4899;
+    font-weight:600;
+}
+
+.hero{
+    text-align:center;
+    padding-top:70px;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(255,105,180,.3);
+}
+
+.hero h1{
+    color:#ec4899;
+    font-size:48px;
+    margin-top:20px;
+}
+
+.hero h2{
+    color:#444;
+    margin-top:10px;
+}
+
+.hero p{
+    margin:20px;
+    color:#666;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 35px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ec4899;
+    transform:scale(1.08);
+}
