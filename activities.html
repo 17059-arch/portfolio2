@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activities</title>
+<title>กิจกรรม</title>
 
 <style>
 
@@ -11,46 +11,63 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Kanit',sans-serif;
 }
 
 body{
-    background:#FFE4EC;
+    background:linear-gradient(
+    135deg,
+    #FFD6E8,
+    #FFE5B4,
+    #FFFACD,
+    #D8F5C4,
+    #D6F0FF,
+    #E6D6FF);
 }
 
 nav{
-    background:#FFF0F5;
-    padding:18px;
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    padding:20px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 nav a{
-    margin:20px;
     text-decoration:none;
-    color:#C2185B;
+    color:#6A5ACD;
     font-weight:bold;
+}
+
+nav a:hover{
+    color:#FF69B4;
+}
+
+.container{
+    max-width:1200px;
+    margin:50px auto;
+    padding:20px;
 }
 
 h1{
     text-align:center;
-    color:#C2185B;
-    margin:40px 0;
+    color:#6A5ACD;
+    margin-bottom:40px;
 }
 
-.container{
-    width:90%;
-    margin:auto;
+.cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
-    padding-bottom:50px;
 }
 
 .card{
-    background:white;
+    background:rgba(255,255,255,.9);
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
     transition:.3s;
 }
 
@@ -64,15 +81,18 @@ h1{
     object-fit:cover;
 }
 
-.card h2{
-    color:#C2185B;
-    padding:15px;
+.content{
+    padding:20px;
 }
 
-.card p{
-    color:#555;
-    padding:0 15px 20px;
-    line-height:1.6;
+.content h2{
+    color:#FF69B4;
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#444;
+    line-height:1.7;
 }
 
 </style>
@@ -82,47 +102,59 @@ h1{
 <body>
 
 <nav>
-    <a href="index.html">หน้าหลัก</a>
-    <a href="about.html">ประวัติส่วนตัว</a>
-    <a href="activities.html">กินกรรม</a>
-    <a href="achievements.html">ผลงานและเกียรติบัตร</a>
-    <a href="contact.html">ช่องทางการติดต่อ</a>
+<a href="index.html">หน้าหลัก</a>
+<a href="about.html">เกี่ยวกับฉัน</a>
+<a href="activities.html">กิจกรรม</a>
+<a href="achievements.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
 </nav>
-
-<h1>My Activities</h1>
 
 <div class="container">
 
+<h1>กิจกรรม</h1>
+
+<div class="cards">
+
 <div class="card">
-<img src="images/activity1.jpg">
-<h2>กิจกรรมที่ 1</h2>
+<img src="images/activity1.jpg" alt="กิจกรรมที่ 1">
+<div class="content">
+<h2>กิจกรรมจิตอาสา</h2>
 <p>
-เข้าร่วมกิจกรรมจิตอาสา พัฒนาชุมชน และฝึกการทำงานร่วมกับผู้อื่น
+เข้าร่วมกิจกรรมจิตอาสาเพื่อบำเพ็ญประโยชน์ ช่วยเหลือชุมชน และฝึกการทำงานร่วมกับผู้อื่น
 </p>
+</div>
 </div>
 
 <div class="card">
-<img src="images/activity2.jpg">
-<h2>กิจกรรมที่ 2</h2>
+<img src="images/activity2.jpg" alt="กิจกรรมที่ 2">
+<div class="content">
+<h2>ค่ายวิชาการ</h2>
 <p>
-เข้าร่วมค่ายวิชาการเพื่อพัฒนาความรู้และประสบการณ์นอกห้องเรียน
+เข้าร่วมค่ายวิชาการเพื่อเพิ่มพูนความรู้ พัฒนาทักษะ และสร้างประสบการณ์ใหม่
 </p>
+</div>
 </div>
 
 <div class="card">
-<img src="images/activity3.jpg">
-<h2>กิจกรรมที่ 3</h2>
+<img src="images/activity3.jpg" alt="กิจกรรมที่ 3">
+<div class="content">
+<h2>กิจกรรมของโรงเรียน</h2>
 <p>
-ร่วมกิจกรรมของโรงเรียน ส่งเสริมความเป็นผู้นำ ความรับผิดชอบ และการทำงานเป็นทีม
+ร่วมกิจกรรมของโรงเรียน ฝึกความรับผิดชอบ ความเป็นผู้นำ และการทำงานเป็นทีม
 </p>
+</div>
 </div>
 
 <div class="card">
-<img src="images/activity4.jpg">
-<h2>กิจกรรมที่ 4</h2>
+<img src="images/activity4.jpg" alt="กิจกรรมที่ 4">
+<div class="content">
+<h2>กิจกรรมด้านสุขภาพ</h2>
 <p>
-เข้าร่วมการแข่งขันและกิจกรรมสร้างสรรค์ เพื่อพัฒนาทักษะและความมั่นใจ
+เข้าร่วมกิจกรรมที่เกี่ยวข้องกับการดูแลสุขภาพและการส่งเสริมคุณภาพชีวิตของชุมชน
 </p>
+</div>
+</div>
+
 </div>
 
 </div>
