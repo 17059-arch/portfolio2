@@ -3,45 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me</title>
+<title>เกี่ยวกับฉัน</title>
 
 <style>
 
-body{
+*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#FFE4EC;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+    135deg,
+    #FFD6E8,
+    #FFE5B4,
+    #FFFACD,
+    #D8F5C4,
+    #D6F0FF,
+    #E6D6FF);
 }
 
 nav{
-    background:#FFF0F5;
-    padding:18px;
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    padding:20px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 nav a{
-    margin:20px;
     text-decoration:none;
-    color:#C2185B;
+    color:#6A5ACD;
     font-weight:bold;
 }
 
+nav a:hover{
+    color:#FF69B4;
+}
+
 .container{
-    max-width:900px;
-    margin:60px auto;
-    background:white;
+    max-width:1000px;
+    margin:50px auto;
+    background:rgba(255,255,255,.9);
+    border-radius:25px;
     padding:40px;
-    border-radius:20px;
-    box-shadow:0 0 20px rgba(0,0,0,.1);
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+
+.profile img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+}
+
+.info{
+    flex:1;
+    min-width:280px;
 }
 
 h1{
-    color:#C2185B;
-    text-align:center;
+    color:#6A5ACD;
+    margin-bottom:20px;
 }
 
 h2{
-    color:#C2185B;
+    color:#FF69B4;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+table{
+    width:100%;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
 }
 
 p{
@@ -49,49 +100,100 @@ p{
     line-height:1.8;
 }
 
+.skill{
+    display:inline-block;
+    margin:8px;
+    padding:10px 18px;
+    background:#E6D6FF;
+    color:#6A5ACD;
+    border-radius:30px;
+    font-weight:bold;
+}
+
 </style>
 
 </head>
+
 <body>
 
 <nav>
-    <a href="index.html">หน้าหลัก</a>
-    <a href="about.html">ประวัติส่วนตัว</a>
-    <a href="activities.html">กินกรรม</a>
-    <a href="achievements.html">ผลงานและเกียรติบัตร</a>
-    <a href="contact.html">ช่องทางการติดต่อ</a>
+<a href="index.html">หน้าหลัก</a>
+<a href="about.html">เกี่ยวกับฉัน</a>
+<a href="activities.html">กิจกรรม</a>
+<a href="achievements.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
 </nav>
 
 <div class="container">
 
-<h1>About Me</h1>
+<div class="profile">
 
-<h2>ข้อมูลส่วนตัว</h2>
+<img src="images/profile.jpg" alt="รูปโปรไฟล์">
 
-<p>
-ชื่อ : นางสาวปราณณิชา สายฉลาด<br>
-ชื่อเล่น : ข้าวฟ่าง<br>
-อายุ : 17 ปี<br>
-วันเกิด : 11|กันยายน|2551<br>
-โรงเรียน : พานทอง<br>
-</p>
+<div class="info">
 
-<h2>อยากเป็นพยาบาล</h2>
+<h1>เกี่ยวกับฉัน</h1>
+
+<table>
+
+<tr>
+<td><strong>ชื่อ-นามสกุล</strong></td>
+<td>.......................................</td>
+</tr>
+
+<tr>
+<td><strong>ชื่อเล่น</strong></td>
+<td>.......................................</td>
+</tr>
+
+<tr>
+<td><strong>วันเกิด</strong></td>
+<td>.......................................</td>
+</tr>
+
+<tr>
+<td><strong>อายุ</strong></td>
+<td>.......................................</td>
+</tr>
+
+<tr>
+<td><strong>โรงเรียน</strong></td>
+<td>.......................................</td>
+</tr>
+
+<tr>
+<td><strong>คณะที่สนใจ</strong></td>
+<td>คณะพยาบาลศาสตร์</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<h2>เป้าหมาย</h2>
 
 <p>
 ฉันมีความมุ่งมั่นที่จะศึกษาต่อในคณะพยาบาลศาสตร์
 เพื่อพัฒนาความรู้และทักษะในการดูแลผู้ป่วย
-พร้อมทั้งเป็นบุคลากรทางการแพทย์ที่มีคุณภาพในอนาคต
+พร้อมทั้งตั้งใจเป็นพยาบาลที่มีจิตใจเมตตา รับผิดชอบ
+และอุทิศตนเพื่อช่วยเหลือผู้อื่น
 </p>
 
-<h2>ทักษะ (Skills)</h2>
+<h2>ทักษะ</h2>
+
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">Canva</span>
+<span class="skill">Microsoft Office</span>
+<span class="skill">การทำงานเป็นทีม</span>
+<span class="skill">การสื่อสาร</span>
+
+<h2>คติประจำใจ</h2>
 
 <p>
-• HTML<br>
-• CSS<br>
-• Canva<br>
-• Microsoft Office<br>
-• การทำงานเป็นทีม
+"ความสำเร็จไม่ได้เกิดจากความเก่งเพียงอย่างเดียว แต่เกิดจากความพยายามและความสม่ำเสมอ"
 </p>
 
 </div>
