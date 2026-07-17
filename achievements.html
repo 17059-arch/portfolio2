@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Achievements</title>
+<title>ผลงานและเกียรติบัตร</title>
 
 <style>
 
@@ -11,46 +11,62 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Kanit',sans-serif;
 }
 
 body{
-    background:#FFE4EC;
+    background:linear-gradient(
+    135deg,
+    #FFD6E8,
+    #FFE5B4,
+    #FFFACD,
+    #D8F5C4,
+    #D6F0FF,
+    #E6D6FF);
 }
 
 nav{
-    background:#FFF0F5;
+    background:rgba(255,255,255,.85);
+    display:flex;
+    justify-content:center;
+    gap:30px;
     padding:18px;
-    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 nav a{
-    margin:20px;
     text-decoration:none;
-    color:#C2185B;
+    color:#6A5ACD;
     font-weight:bold;
 }
 
-h1{
-    text-align:center;
-    color:#C2185B;
-    margin:40px 0;
+nav a:hover{
+    color:#FF69B4;
 }
 
 .container{
     width:90%;
-    margin:auto;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+h1{
+    text-align:center;
+    color:#6A5ACD;
+    margin-bottom:40px;
+}
+
+.gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    padding-bottom:50px;
+    gap:25px;
 }
 
 .card{
     background:white;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
     transition:.3s;
 }
 
@@ -64,15 +80,18 @@ h1{
     object-fit:cover;
 }
 
-.card h2{
-    color:#C2185B;
-    padding:15px;
+.card-content{
+    padding:20px;
 }
 
-.card p{
+.card-content h2{
+    color:#FF69B4;
+    margin-bottom:10px;
+}
+
+.card-content p{
     color:#555;
-    padding:0 15px 20px;
-    line-height:1.6;
+    line-height:1.7;
 }
 
 </style>
@@ -82,47 +101,59 @@ h1{
 <body>
 
 <nav>
-    <a href="index.html">หน้าหลัก</a>
-    <a href="about.html">ประวัติส่วนตัว</a>
-    <a href="activities.html">กินกรรม</a>
-    <a href="achievements.html">ผลงานและเกียรติบัตร</a>
-    <a href="contact.html">ช่องทางการติดต่อ</a>
+<a href="index.html">หน้าหลัก</a>
+<a href="about.html">เกี่ยวกับฉัน</a>
+<a href="activities.html">กิจกรรม</a>
+<a href="achievements.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
 </nav>
-
-<h1>My Achievements</h1>
 
 <div class="container">
 
+<h1>ผลงานและเกียรติบัตร</h1>
+
+<div class="gallery">
+
 <div class="card">
-<img src="images/certificate1.jpg" alt="Certificate 1">
-<h2>เกียรติบัตรที่ 1</h2>
+<img src="images/certificate1.jpg" alt="เกียรติบัตร 1">
+<div class="card-content">
+<h2>เกียรติบัตรการอบรม</h2>
 <p>
-ผ่านการอบรมหรือกิจกรรมด้านวิชาการ พร้อมได้รับเกียรติบัตรรับรองการเข้าร่วม
+ผ่านการเข้าร่วมอบรมเพื่อพัฒนาความรู้และทักษะ พร้อมได้รับเกียรติบัตรรับรอง
 </p>
+</div>
 </div>
 
 <div class="card">
-<img src="images/certificate2.jpg" alt="Certificate 2">
-<h2>เกียรติบัตรที่ 2</h2>
+<img src="images/certificate2.jpg" alt="เกียรติบัตร 2">
+<div class="card-content">
+<h2>อาชีพในฝัน</h2>
 <p>
-เข้าร่วมการแข่งขันหรือโครงการที่ช่วยพัฒนาทักษะและประสบการณ์
+มีความใฝ่ฝันที่จะเป็นข้าราชการพยาบาล เพื่อดูแลผู้ป่วยด้วยความรู้ ความสามารถ และจิตใจที่เปี่ยมด้วยเมตตา พร้อมอุทิศตนเพื่อสังคม
 </p>
+</div>
 </div>
 
 <div class="card">
-<img src="images/certificate3.jpg" alt="Certificate 3">
-<h2>ผลงานเด่น</h2>
+<img src="images/certificate3.jpg" alt="เกียรติบัตร 3">
+<div class="card-content">
+<h2>ผลงานที่ภาคภูมิใจ</h2>
 <p>
-ผลงานที่ภาคภูมิใจ ซึ่งแสดงถึงความสามารถ ความรับผิดชอบ และความมุ่งมั่น
+ผลงานที่แสดงถึงความรับผิดชอบ ความตั้งใจ และความมุ่งมั่นในการพัฒนาตนเอง
 </p>
+</div>
 </div>
 
 <div class="card">
-<img src="images/certificate4.jpg" alt="Certificate 4">
-<h2>รางวัล</h2>
+<img src="images/certificate4.jpg" alt="เกียรติบัตร 4">
+<div class="card-content">
+<h2>เกียรติบัตรจิตอาสา</h2>
 <p>
-รางวัลหรือประกาศนียบัตรที่ได้รับจากการเข้าร่วมกิจกรรมต่าง ๆ
+ได้รับเกียรติบัตรจากการเข้าร่วมกิจกรรมจิตอาสาและการบำเพ็ญประโยชน์เพื่อส่วนรวม
 </p>
+</div>
+</div>
+
 </div>
 
 </div>
